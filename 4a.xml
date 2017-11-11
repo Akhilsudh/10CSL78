@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<?xml-stylesheet type="text/css" href="4a.css"?>
+
+<vtu>
+  <student-info>
+    <usn>1MV14CS004</usn>
+    <name>Abhijith C</name>
+    <college>SIR MVIT</college>
+    <branch>CSE</branch>
+    <year>2014</year>
+    <email>jith@gmail.com</email>
+  </student-info>
+
+  <student-info>
+    <usn>1MV14CS005</usn>
+    <name>Abhinav A Nair</name>
+    <college>SIR MVIT</college>
+    <branch>CSE</branch>
+    <year>2014</year>
+    <email>abhi@gmail.com</email>
+  </student-info>
+
+  <student-info>
+    <usn>1MV14CS009</usn>
+    <name>Akhil S</name>
+    <college>SIR MVIT</college>
+    <branch>CSE</branch>
+    <year>2014</year>
+    <email>akhil@gmail.com</email>
+  </student-info>
+</vtu>
