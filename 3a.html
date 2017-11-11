@@ -1,0 +1,58 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<!DOCTYPE html PUBLIC "-/W3C/DTDXHTML1.1/EN"
+"http:/www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http:/www.w3.org/1999/xhtml">
+  <head>
+    <title>Paragraphs stacked on each other</title>
+    <style type="text/css">
+      .para1{width:300px;background-color:green;position:absolute; top:100px;left:200px;z-index:0;}
+      .para2{width:300px;background-color:cyan;position:absolute; top:120px;left:220px;z-index:0;}
+      .para3{width:300px;background-color:purple;position:absolute; top:140px;left:240px;z-index:0;}
+    </style>
+
+    <script type="text/javascript">
+      var topLayer="1";
+
+      function mover(toTop)
+      {
+        var oldTop = document.getElementById(topLayer).style;
+        var newTop = document.getElementById(toTop).style;
+        oldTop.zIndex = "0";
+        newTop.zIndex = "10";
+        topLayer = toTop;
+      }
+    </script>
+  </head>
+
+  <body bgcolor="lightgreen">
+    <center>
+      <h2>Paragraphs stacked on each other shown below</h2>
+      <div class="para1" id="1" onmouseover="mover('1')">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nullam id erat urna. Duis quis viverra justo. Nam imperdiet
+        eget mauris eu condimentum. Integer nec nibh urna. Curabitur
+        ut nibh venenatis risus suscipit semper at a felis. Suspendisse
+        pharetra, sem id dapibus tincidunt, enim tortor scelerisque elit,
+        sit amet semper enim risus vitae elit.
+      </div>
+      <div class="para2" id="2" onmouseover="mover('2')">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nullam id erat urna. Duis quis viverra justo. Nam imperdiet
+        eget mauris eu condimentum. Integer nec nibh urna. Curabitur
+        ut nibh venenatis risus suscipit semper at a felis. Suspendisse
+        pharetra, sem id dapibus tincidunt, enim tortor scelerisque elit,
+        sit amet semper enim risus vitae elit.
+      </div>
+      <div class="para3" id="3" onmouseover="mover('3')">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nullam id erat urna. Duis quis viverra justo. Nam imperdiet
+        eget mauris eu condimentum. Integer nec nibh urna. Curabitur
+        ut nibh venenatis risus suscipit semper at a felis. Suspendisse
+        pharetra, sem id dapibus tincidunt, enim tortor scelerisque elit,
+        sit amet semper enim risus vitae elit.
+      </div>
+    </center>
+  </body>
+</html>
