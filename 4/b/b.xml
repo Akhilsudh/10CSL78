@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="b.xsl" ?>
+<vtu>
+    <student-info>
+        <usn>1MV14CS001</usn>
+        <name>abc</name>
+        <college>SIR MVIT</college>
+        <branch>CS</branch>
+        <year>2014</year>
+        <email>abc@gmail.com</email>
+    </student-info>
+</vtu>

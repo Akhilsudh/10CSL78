@@ -1,0 +1,23 @@
+<html>
+<head><title>Searched Book Information</title></head>
+<body bgcolor=lightgreen>
+<center><b>
+<% if @book_search.length==0 %>
+	NO ROWS FOUND
+<% else %>
+<table border=1>
+<tr><td>ACCT</td><td>TITLE</td><td>AUTHOR</td><td>EDITION</td><td>PUBLICATION</td></tr>
+<% @book_search.each do |book| %>
+<tr>
+	<td><%=book.acct%></td>
+	<td><%=book.title%></td>
+	<td><%=book.author%></td>
+	<td><%=book.edition%></td>
+	<td><%=book.pub%></td>
+</tr>
+<%end%>
+</table>
+<%end%>
+</b></center>
+</body>
+</html>

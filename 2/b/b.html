@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>USN Validation</title>
+	<script type="text/javascript">
+		function validate() {
+			var usn = document.getElementById("usn").value;
+			var sem = document.getElementById("sem").value;
+			var usnExp = /^[1-4][A-Z][A-Z][0-9][0-9][A-Z][A-Z][0-9][0-9][0-9]$/;
+			var semExp = /^[1-8]$/;
+			if (usn.length == 0 || sem.length == 0) {
+				alert("Input empty field");
+				return false;
+			} else if (!usn.match(usnExp)) {
+				alert("USN not correct!");
+				usn.focus();
+				return false;
+			} else if (!sem.match(semExp)) {
+				alert("SEM not correct!");
+				sem.focus();
+				return false;
+			}
+			alert("USN number " + usn + " is correct!\nSem " + sem + " is correct!");
+			return true;
+		}
+	</script>
+</head>
+
+<body bgcolor="lightgreen">
+	<form>
+		<br />
+		<br />
+		<center>
+			<b>Enter usn: </b>
+			<input type="text" id="usn" />
+			<br />
+			<br />
+			<b>Enter sem: </b>
+			<input type="text" id="sem" />
+			<br />
+			<br />
+			<input type="Submit" value="Validate" onClick="validate()" />
+		</center>
+	</form>
+</body>
+
+</html>
