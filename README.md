@@ -31,3 +31,10 @@ Output:  A table of numbers from 1 to n and their squares using alert ](https://
 
 #### 7. 
 [Write a Perl program to display a digital clock which displays the current time of the server. ](https://raw.githubusercontent.com/Akhilsudh/10CSL78/master/7.pl)
+
+#### 8. 
+[Write  a  Perl  program  to  insert  name  and  age  informa
+tion  entered  by  the 
+user into a table created using MySQL and to displa
+y the current contents 
+of this table](https://raw.githubusercontent.com/Akhilsudh/10CSL78/master/8.html)
