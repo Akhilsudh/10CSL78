@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Table of Numbers</title>
+</head>
+
+<body bgcolor="lightgreen">
+	<script type="text/javascript">
+		var num = prompt("Enter a number", "");
+		if (num > 0 && num != null) {
+			var squareof = "Number and its square are \n";
+			for (var i = 1; i <= num; i++) {
+				squareof = squareof + i + "=" + (i * i) + "\n";
+			}
+			alert(squareof);
+		} else alert("Invalid input!");
+	</script>
+</body>
+
+</html>
