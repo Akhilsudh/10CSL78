@@ -4,7 +4,7 @@ Steps to execute
 2)  I button -> Rails application -> Open ruby Console window
 3)  check if console shows current  directory as rails_app
 4)  create new application with command
-> rail -d mysql lab12
+> rails -d mysql lab12
 5)  now go to lab director with command
 >  cd lab12
 6)  configure database with command
