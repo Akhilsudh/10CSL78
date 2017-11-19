@@ -1,32 +1,32 @@
-#Steps to execute
+Steps to execute
 
 1)  Open InstantRail and start apache and mysql
 2)  I button -> Rails application -> Open ruby Console window
 3)  check if console shows current  directory as rails_app
 4)  create new application with command
-## rail -d mysql lab12
+> rail -d mysql lab12
 5)  now go to lab director with command
-##  cd lab12
+>  cd lab12
 6)  configure database with command
-## rake db:create:all
+lab12> rake db:create:all
 7)  create database table with command
-## ruby script/generate scaffold bookinfo acct:integer title:string author:string edition:string pub:string
+lab12> ruby script/generate scaffold bookinfo acct:integer title:string author:string edition:string pub:string
 8)  create migration
-## rake db:migrate
+lab12> rake db:migrate
 9)  check if bookinfos:migrated message appears
 10) start server with command
-## ruby script/server
+lab12> ruby script/server
 11) go to http://localhost:3000/bookinfos and enter data in form
 12) use Ctrl + C to stop server
 13) create a new controller called main with command
-## ruby script/generate controller main
+lab12> ruby script/generate controller main
 14) check if main_controller.rb is created in ..\lab12\app\controllers folder
 15) create file search.html.erb in ..\lab12\app\views\main and type its content and save it
-## notepad app\views\main\search.html.erb
+lab12> notepad app\views\main\search.html.erb
 16) type content of main_controller.rb and save it
-## notepad app\controllers\main_controller.rb
+lab12> notepad app\controllers\main_controller.rb
 17) create file search_book.erb in ..\lab12\app\views\main and type its content and save it
-## notepad app\views\main\search_book.html.erb
+lab12> notepad app\views\main\search_book.html.erb
 18) start server 
-## ruby script/server
+lab12> ruby script/server
 19) go to http://localhost:3000/main/search
