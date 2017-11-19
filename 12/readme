@@ -25,7 +25,7 @@ lab12> ruby script/generate controller main
 lab12> notepad app\views\main\search.html.erb
 16) type content of main_controller.rb and save it
 lab12> notepad app\controllers\main_controller.rb
-17) create file search_book.erb in ..\lab12\app\views\main and type its content and save it
+17) create file search_book.html.erb in ..\lab12\app\views\main and type its content and save it
 lab12> notepad app\views\main\search_book.html.erb
 18) start server 
 lab12> ruby script/server
