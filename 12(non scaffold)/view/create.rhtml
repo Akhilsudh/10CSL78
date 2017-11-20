@@ -1,0 +1,42 @@
+<html>
+<title>Insert the New Book Values</title>
+<h1>Insert the New Book details</h1>
+<body>
+
+
+<%= error_messages_for :books %>
+<% form_tag :action => 'create' do %>
+<table >
+<tr><td>Accession Number:</td>
+<td><%= text_field 'books', 'accession_number' %></td>
+</tr>
+
+<tr><td>Title:</td>
+<td  ><%= text_field 'books', 'title' %></td>
+</tr>
+
+<tr><td>Author:</td>
+<td><%= text_field 'books', 'author' %></td>
+</tr>
+
+<tr><td>Edition:</td>
+<td><%= text_field 'books', 'edition' %></td>
+</tr>
+
+<tr>
+<td>Publisher:</td><td><%= text_field 'books', 'publisher' %>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="submit"/></td>
+</tr>
+</table>
+
+<% end %>
+
+
+</body>
+</html>
+

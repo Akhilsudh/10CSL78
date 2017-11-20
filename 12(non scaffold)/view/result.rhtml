@@ -1,0 +1,36 @@
+<html>
+<title>The search result</title>
+<body>
+<h1>The Searched results for <%= @title %> book as  follows</h1>
+<table border="border">
+<tr>
+<th>Accession Number</th>
+<th>Title</th>
+<th>Author</th>
+<th>Edition</th>
+<th>Publisher</th>
+</tr>
+
+<% @books.each do |book|
+#@id=book.id
+@accno=book.accession_number
+@title=book.title
+@author=book.author
+@edition=book.edition
+@publisher=book.publisher %>
+<tr>
+
+ <td><%= @accno %></td>
+
+ <td><%= @title %></td>
+ <td><%= @author %></td>
+ <td><%= @edition %></td>
+ <td><%= @publisher %></td>
+</tr>
+<% end %>
+</table>
+
+</body>
+</html>
+</html>
+
