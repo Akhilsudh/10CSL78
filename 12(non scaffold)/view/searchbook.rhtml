@@ -1,0 +1,18 @@
+<html>
+<title>Search Book Results</title>
+<body>
+<% form_tag :action => 'result' do %>
+<table>
+<tr><td>Title:</td>
+<td  ><%= text_field 'books', 'title' %></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="submit"/></td>
+</tr>
+</table>
+
+<% end %>
+
+</body>
+</html>
