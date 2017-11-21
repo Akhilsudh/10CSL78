@@ -16,7 +16,7 @@ if($len <= 0) {
     print "No row found";
 } else {
     print "The database table content shown below<br><br><table border=1>";
-    print "<tr><td>NAME</td><td>AGE</td></tr>";
+    print "<tr><th>NAME</th><th>AGE</th></tr>";
     while(@data=$res1->fetchrow_array()) {
         print "<tr><td>$data[0]</td><td>$data[1]</td></tr>";
     }
