@@ -36,16 +36,13 @@
     </style>
 
     <script type="text/javascript">
-        var topLayer = "3";
         var origPos;
-        function mover(toTop, pos) {
-            var newTop = document.getElementById(toTop).style;
-            newTop.zIndex = "10";
-            topLayer = document.getElementById(toTop).id;
-            origPos = pos;
+        function mover(toTop) {
+            origPos = toTop;
+            document.getElementById(toTop).style.zIndex = '10';
         }
         function moveBack() {
-            document.getElementById(topLayer).style.zIndex = origPos;
+            document.getElementById(origPos).style.zIndex = origPos;
         }
     </script>
 </head>
@@ -53,17 +50,17 @@
 <body bgcolor="lightgreen">
     <center>
         <h2>Paragraphs stacked on each other shown below</h2>
-        <div class="para1" id="1" onmouseover="mover('1','1')" onmouseout="moveBack()">
+        <div class="para1" id="1" onmouseover="mover('1')" onmouseout="moveBack()">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id erat urna. Duis quis viverra justo. Nam imperdiet eget
             mauris eu condimentum. Integer nec nibh urna. Curabitur ut nibh venenatis risus suscipit semper at a felis. Suspendisse
             pharetra, sem id dapibus tincidunt, enim tortor scelerisque elit, sit amet semper enim risus vitae elit.
         </div>
-        <div class="para2" id="2" onmouseover="mover('2','2')" onmouseout="moveBack()">
+        <div class="para2" id="2" onmouseover="mover('2')" onmouseout="moveBack()">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id erat urna. Duis quis viverra justo. Nam imperdiet eget
             mauris eu condimentum. Integer nec nibh urna. Curabitur ut nibh venenatis risus suscipit semper at a felis. Suspendisse
             pharetra, sem id dapibus tincidunt, enim tortor scelerisque elit, sit amet semper enim risus vitae elit.
         </div>
-        <div class="para3" id="3" onmouseover="mover('3','3')" onmouseout="moveBack()">
+        <div class="para3" id="3" onmouseover="mover('3')" onmouseout="moveBack()">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id erat urna. Duis quis viverra justo. Nam imperdiet eget
             mauris eu condimentum. Integer nec nibh urna. Curabitur ut nibh venenatis risus suscipit semper at a felis. Suspendisse
             pharetra, sem id dapibus tincidunt, enim tortor scelerisque elit, sit amet semper enim risus vitae elit.
